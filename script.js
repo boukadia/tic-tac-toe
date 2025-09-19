@@ -27,16 +27,17 @@ function remplire(event) {
 
     let ct;
     let t=0;
-    ct = 1;
     let x = 0;
     for (let i = 0; i < nombr * nombr; i+=nombr) {
+        ct = 1;
         win=0
         if (i==nombr) {
-r=nombr-1;
+        r=nombr-1;
             for (let m = r+nombr-1; m < (nombr*nombr)-nombr+1; m+=nombr-1) {
-                if (event.target.parentElement.children[r].innerText ==
+                if (ct<nombr&&
+                    event.target.parentElement.children[r].innerText ==
                 event.target.parentElement.children[m].innerText &&
-                event.target.parentElement.children[i].innerText != "") {
+                event.target.parentElement.children[r].innerText != "") {
                     if (ct<nombr) {
                         ct++;
                     
