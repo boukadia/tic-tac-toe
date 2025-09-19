@@ -3,19 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tic Tac Toe Game</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <input class="player1" type="number" >
-    <input class ="player2" type="number" >
-    <button id="startBtn">start</button>
-    <div class="container" onclick="test()">
-       
+    <div class="game-container">
+        <h1>Tic Tac Toe</h1>
         
+        <div class="controls">
+            <div class="input-group">
+                <label for="sizeTble"> Board Size:</label>
+                <input id="sizeTble" class="largeur" type="number" min="3" value="3">
+            </div>
+            
+            <div class="input-group">
+                <label for="player-count">Winning Length:</label>
+                <input id="player-count" class="winningLength" type="number" min="2" max="2" value="2">
+            </div>
+            
+            <div class="buttons">
+                <button id="startBtn" onclick="creationTabl()" class="btn">Start Game</button>
+                <button id="resetBtn" class="btn">Reset Game</button>
+            </div>
+            <div class="player-indicators">
+                <div class="btn active ">Player X</div>
+                <div class="btn ">Player O</div>
+            </div>
+        </div>
+        
+        <di class="container" ></di
     </div>
     
-    
+
+
+ 
     <script src="script.js"></script>
 </body>
 </html>
